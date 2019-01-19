@@ -1,0 +1,1 @@
+npm run deploy -m "deploy: pushing to gh pages" -b "gh-pages"
