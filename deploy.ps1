@@ -1,1 +1,0 @@
-node ./node_modules/vue-gh-pages/index.js -b gh-pages
