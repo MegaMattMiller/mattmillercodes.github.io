@@ -20,7 +20,7 @@
                 <h5 class="card-title">My Favorite Git Aliases</h5>
                 <p
                   class="card-text"
-                >My collection of aliases for Git. You might find them useful. You will find them silly.</p>
+                >My collection of aliases for Git. You might find them useful.</p>
                 <a
                   href="https://github.com/MegaMattMiller/gitAliases"
                   class="btn btn-primary"
