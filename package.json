@@ -5,7 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "deploy": "node ./node_modules/vue-gh-pages/index.js"
   },
   "dependencies": {
     "bootstrap": "^4.2.1",
@@ -24,6 +25,7 @@
     "vue-gh-pages": "^1.19.0",
     "vue-template-compiler": "^2.5.21"
   },
+  "homepage": "https://github.com/MegaMattMiller/mattmillercodes.github.io",
   "eslintConfig": {
     "root": true,
     "env": {
