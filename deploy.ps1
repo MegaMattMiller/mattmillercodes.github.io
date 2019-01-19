@@ -1,1 +1,1 @@
-npm run deploy -m "deploy: pushing to gh pages" -b "gh-pages"
+node ./node_modules/vue-gh-pages/index.js -b gh-pages
