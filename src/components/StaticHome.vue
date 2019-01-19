@@ -1,9 +1,5 @@
 <template>
   <div class="statichome">
-    <nav class="navbar navbar-dark bg-dark">
-      <a class="navbar-brand no-select" href="#">Matt Miller | Programmer</a>
-    </nav>
-
     <div class="jumbotron jumbotron-fluid no-select">
       <div class="container">
         <h1 class="display-4">Hi! I'm Matt!</h1>
