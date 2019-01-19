@@ -1,8 +1,29 @@
-# mattmillercodes.github.io
+# mattmillercodes
 
-Requires Sass to CSS transpiler.
+## Project setup
+```
+npm install
+```
 
-npm install -g node-sass less gulp gulp-cli
-npm install gulp gulp-sass
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
 
-https://code.visualstudio.com/docs/languages/css
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Run your tests
+```
+npm run test
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
