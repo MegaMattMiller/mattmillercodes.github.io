@@ -6,35 +6,12 @@
         <p class="lead">I'm a programmer!</p>
       </div>
     </div>
-
     <div class="container">
       <div class="row align-items-center">
         <div class="col">
           <div class="card-deck">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">My Favorite Git Aliases</h5>
-                <p
-                  class="card-text"
-                >My collection of aliases for Git. You might find them useful.</p>
-                <a
-                  href="https://github.com/MegaMattMiller/gitAliases"
-                  class="btn btn-primary"
-                >Check it out</a>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">PowerShell Helpers</h5>
-                <p class="card-text">
-                  A collection of helpers to make your day-to-day Powershell use much more
-                  pleasant.
-                </p>
-                <a
-                  href="https://github.com/MegaMattMiller/powershellHelpers"
-                  class="btn btn-primary"
-                >Check it out</a>
-              </div>
+            <div class="card" v-bind:key="card.id" v-for="card in cards">
+              <GitHubCard v-bind:title="card.title" v-bind:body="card.body" v-bind:url="card.url" />
             </div>
           </div>
         </div>
@@ -44,8 +21,21 @@
 </template>
 
 <script>
+import GitHubCard from "../components/GitHubCard";
+
 export default {
-  name: "Home"
+  name: "Home",
+  components: {
+    GitHubCard
+  },
+  data: function () {
+    return {
+      cards: [
+      { id: 0, title: "My Favorite Git Aliases", body: 'My collection of aliases for Git. You might find them useful.', url: 'https://github.com/MegaMattMiller/gitAliases' },
+      { id:1, title: 'PowerShell Helpers', body: 'A collection of helpers to make your day-to-day Powershell use much more pleasant.', url: 'https://github.com/MegaMattMiller/powershellHelpers' }
+    ]
+    }
+  },
 };
 </script>
 
