@@ -4,7 +4,7 @@ node_js:
   - "node"
 
 before_install:
-  - npm i -g npm@6.50
+  - npm i -g npm@6.5.0
 
 install:
   - npm ci
