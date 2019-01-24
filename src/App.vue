@@ -1,22 +1,21 @@
 <template>
   <div id="app">
     <Header />
-    <StaticHome />
+    <router-view/>
   </div>
 </template>
 
 <script>
-import StaticHome from './components/StaticHome.vue';
-import Header from './components/Header.vue';
+import Header from "./components/Header";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
-    StaticHome,
     Header
   }
 }
 </script>
+
 
 <style>
 .no-select {
