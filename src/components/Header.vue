@@ -11,6 +11,9 @@
                 </li>
             </ul>
         </div>
+        <a class="navbar-icon" href="https://github.com/MegaMattMiller/" target="_blank">
+            <font-awesome-icon :icon="['fab', 'github-square']" />
+        </a>
     </nav>
 </template>
 
@@ -21,4 +24,8 @@ export default {
 </script>
 
 <style scoped>
+.navbar-icon {
+    color: white;
+    font-size: 30px;
+}
 </style>
