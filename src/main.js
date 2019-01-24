@@ -4,12 +4,11 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import router from './router';
 import { library } from '@fortawesome/fontawesome-svg-core';
-// import { faCoffee } from '@fortawesome/free-solid-svg-icons';
-import { fab } from '@fortawesome/free-brands-svg-icons';
+import { faGithubSquare, faDev } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 
-library.add(fab);
+library.add(faGithubSquare, faDev);
 
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 
