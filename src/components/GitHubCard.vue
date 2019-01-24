@@ -7,6 +7,7 @@
         <a
             :href="url"
             class="btn btn-primary"
+            target="_blank"
         >
         Check it out
         </a>
