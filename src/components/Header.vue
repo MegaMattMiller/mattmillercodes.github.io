@@ -17,4 +17,9 @@ export default {
 </script>
 
 <style scoped>
+.navbar-icon {
+    color: white;
+    font-size: 30px;
+    padding-right: 10px
+}
 </style>
