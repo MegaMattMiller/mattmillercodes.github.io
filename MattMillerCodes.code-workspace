@@ -1,13 +1,13 @@
 {
-	"folders": [
-		{
-			"path": "."
-		}
-	],
+	"folders": [{
+		"path": "."
+	}],
 	"settings": {
 		"git.ignoreLimitWarning": true,
 		"jshint.options": {
 			"esversion": 6
 		},
+		"editor.insertSpaces": true,
+		"editor.tabSize": 2,
 	}
 }
