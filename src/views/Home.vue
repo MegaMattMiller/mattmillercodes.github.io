@@ -1,12 +1,9 @@
 <template>
   <div class="statichome">
-    <div class="jumbotron jumbotron-fluid no-select">
-      <div class="container">
-        <h1 class="display-4">Hi! I'm Matt!</h1>
-        <p class="lead">I'm a programmer!</p>
-      </div>
-    </div>
-    <div class="container">
+    <b-jumbotron header="Hi! I'm Matt!" fluid="true">
+      <p>I'm a programmer!</p>
+    </b-jumbotron>
+    <b-container>
       <div class="row align-items-center">
         <div class="col">
           <b-card-group deck>
@@ -20,7 +17,7 @@
           </b-card-group>
         </div>
       </div>
-    </div>
+    </b-container>
   </div>
 </template>
 
