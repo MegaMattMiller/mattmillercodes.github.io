@@ -1,22 +1,18 @@
 <template>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <router-link class="navbar-brand no-select" to="/">Matt Miller | Programmer</router-link>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <router-link class="nav-link" to="/">Home</router-link>
-                </li>
-                <li class="nav-item">
-                    <router-link class="nav-link" to="/about">About</router-link>
-                </li>
-            </ul>
-        </div>
-    </nav>
+  <b-navbar toggleable="lg" type="dark" variant="dark">
+    <b-navbar-brand to="/">Matt Miller | Programmer</b-navbar-brand>
+    <b-navbar-toggle target="nav_collapse" />
+    <b-collapse is-nav id="nav_collapse">
+      <b-navbar-nav>
+        <b-nav-item to="/">Home</b-nav-item>
+      </b-navbar-nav>
+    </b-collapse>
+  </b-navbar>
 </template>
 
 <script>
 export default {
-    name: "Header"
+  name: "Header"
 };
 </script>
 

@@ -9,11 +9,15 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col">
-          <div class="card-deck">
-            <div class="card" v-bind:key="card.id" v-for="card in cards">
-              <GitHubCard v-bind:title="card.title" v-bind:body="card.body" v-bind:url="card.url" />
-            </div>
-          </div>
+          <b-card-group deck>
+            <GitHubCard
+              v-bind:key="card.id"
+              v-for="card in cards"
+              v-bind:title="card.title"
+              v-bind:body="card.body"
+              v-bind:url="card.url"
+            />
+          </b-card-group>
         </div>
       </div>
     </div>
@@ -28,14 +32,25 @@ export default {
   components: {
     GitHubCard
   },
-  data: function () {
+  data: function() {
     return {
       cards: [
-      { id: 0, title: "My Favorite Git Aliases", body: 'My collection of aliases for Git. You might find them useful.', url: 'https://github.com/MegaMattMiller/gitAliases' },
-      { id:1, title: 'PowerShell Helpers', body: 'A collection of helpers to make your day-to-day Powershell use much more pleasant.', url: 'https://github.com/MegaMattMiller/powershellHelpers' }
-    ]
-    }
-  },
+        {
+          id: 0,
+          title: "My Favorite Git Aliases",
+          body: "My collection of aliases for Git. You might find them useful.",
+          url: "https://github.com/MegaMattMiller/gitAliases"
+        },
+        {
+          id: 1,
+          title: "PowerShell Helpers",
+          body:
+            "A collection of helpers to make your day-to-day Powershell use much more pleasant.",
+          url: "https://github.com/MegaMattMiller/powershellHelpers"
+        }
+      ]
+    };
+  }
 };
 </script>
 
