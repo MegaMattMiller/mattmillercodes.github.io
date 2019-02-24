@@ -1,7 +1,7 @@
 <template>
   <b-card :title="title">
     <b-card-text>{{body}}</b-card-text>
-    <b-button :href="url" variant="primary">Check it out</b-button>
+    <b-button :href="url" variant="dark">Check it out</b-button>
   </b-card>
 </template>
 
