@@ -22,12 +22,14 @@
 </template>
 
 <script>
+import VueMarkdown from 'vue-markdown'; //https://www.npmjs.com/package/vue-markdown
 import GitHubCard from "../components/GitHubCard";
 
 export default {
   name: "Home",
   components: {
-    GitHubCard
+    GitHubCard,
+    VueMarkdown
   },
   data: function() {
     return {

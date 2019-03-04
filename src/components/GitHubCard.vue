@@ -1,7 +1,12 @@
 <template>
-  <b-card :title="title">
+  <b-card
+  :title="title"
+  bg-variant="light"
+  footer-tag="footer"
+  footer-bg-variant="light"
+  >
     <b-card-text>{{body}}</b-card-text>
-    <b-button :href="url" variant="dark">Check it out</b-button>
+    <b-button :href="url" variant="dark" slot="footer" class="float-right">Check it out</b-button>
   </b-card>
 </template>
 
