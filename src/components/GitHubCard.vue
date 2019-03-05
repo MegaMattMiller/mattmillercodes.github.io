@@ -57,7 +57,7 @@ export default {
   },
   data: function() {
     return {
-      lastEditedDate: "Updated some time ago",
+      lastEditedDate: "",
       repoName: "",
       imagePath: ""
     };
