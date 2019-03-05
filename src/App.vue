@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Header />
+    <Header/>
     <router-view/>
   </div>
 </template>
@@ -13,19 +13,19 @@ export default {
   components: {
     Header
   }
-}
+};
 </script>
 
 <style lang="scss">
-  @mixin no-select() {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
+@mixin no-select() {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 
-  img {
-    @include no-select();
-  }
+img {
+  @include no-select();
+}
 </style>
 
