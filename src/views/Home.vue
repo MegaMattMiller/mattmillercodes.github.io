@@ -38,14 +38,15 @@ export default {
           id: 0,
           title: "My Favorite Git Aliases",
           body: "My collection of aliases for Git. You might find them useful.",
-          url: "https://github.com/MegaMattMiller/gitAliases"
+          url: "https://github.com/MegaMattMiller/gitAliases",
+          last: ""
         },
         {
           id: 1,
           title: "PowerShell Helpers",
-          body:
-            "A collection of helpers to make your day-to-day Powershell use much more pleasant.",
-          url: "https://github.com/MegaMattMiller/powershellHelpers"
+          body: "A collection of helpers to make your day-to-day Powershell use much more pleasant.",
+          url: "https://github.com/MegaMattMiller/powershellHelpers",
+          last: ""
         }
       ]
     };
