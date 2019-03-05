@@ -16,11 +16,16 @@ export default {
 }
 </script>
 
+<style lang="scss">
+  @mixin no-select() {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
 
-<style>
-.no-select {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
+  img {
+    @include no-select();
+  }
 </style>
+

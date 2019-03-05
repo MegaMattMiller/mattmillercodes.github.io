@@ -1,6 +1,6 @@
 <template>
   <div class="statichome">
-    <b-jumbotron header="Hi! I'm Matt!" fluid="true">
+    <b-jumbotron header="Hi! I'm Matt!" fluid>
       <p>I'm a programmer!</p>
     </b-jumbotron>
     <b-container>

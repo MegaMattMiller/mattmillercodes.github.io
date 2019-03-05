@@ -10,9 +10,15 @@
     <b-card-text>{{body}}</b-card-text>
     <b-container slot="footer">
       <b-row align-v="center">
-        <b-col>{{lastEditedDate}}</b-col>
         <b-col>
-          <b-button :href="url" variant="dark" class="float-right">Check it out</b-button>
+          <span class="float-left">
+            {{lastEditedDate}}
+          </span>
+        </b-col>
+        <b-col>
+          <b-button :href="url" variant="dark" class="float-right">
+            Check it out
+          </b-button>
         </b-col>
       </b-row>
     </b-container>
@@ -70,5 +76,9 @@ export default {
   width: 100%;
   height: 15vw;
   object-fit: cover;
+}
+.card-footer {
+  padding-left: 0;
+  padding-right: 0;
 }
 </style>
