@@ -1,13 +1,21 @@
 <template>
   <b-card
     :title="title"
+    :img-src="imagePath"
+    img-top
     bg-variant="light"
-    :footer="lastEditedDate"
-    footer-tag="footer"
     footer-bg-variant="light"
+    footer-tag="footer"
   >
     <b-card-text>{{body}}</b-card-text>
-    <b-button :href="url" variant="dark" class="float-left">Check it out</b-button>
+    <b-container slot="footer">
+      <b-row align-v="center">
+        <b-col>{{lastEditedDate}}</b-col>
+        <b-col>
+          <b-button :href="url" variant="dark" class="float-right">Check it out</b-button>
+        </b-col>
+      </b-row>
+    </b-container>
   </b-card>
 </template>
 
@@ -34,14 +42,14 @@ export default {
         // such as custom SSL certificate or proxy settings.
         // See https://nodejs.org/api/http.html#http_class_http_agent
         agent: undefined,
-
         // request timeout in ms. 0 means no timeout
         timeout: 0
       }
     });
-    let repoName = this.url.replace("https://github.com/MegaMattMiller/", "");
+    this.repoName = this.url.replace("https://github.com/MegaMattMiller/", "");
+    this.imagePath = "/images/" + this.repoName + ".svg";
     octokit.repos
-      .listCommits({ owner: "MegaMattMiller", repo: repoName })
+      .listCommits({ owner: "MegaMattMiller", repo: this.repoName })
       .then(result => {
         this.lastEditedDate =
           "Updated " + timeAgo(result.data[0].commit.author.date);
@@ -49,11 +57,18 @@ export default {
   },
   data: function() {
     return {
-      lastEditedDate: ""
+      lastEditedDate: "",
+      repoName: "",
+      imagePath: ""
     };
   }
 };
 </script>
 
 <style scoped>
+.card-img-top {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+}
 </style>
