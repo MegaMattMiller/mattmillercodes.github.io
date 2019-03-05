@@ -47,12 +47,12 @@ export default {
       }
     });
     this.repoName = this.url.replace("https://github.com/MegaMattMiller/", "");
-    this.imagePath = "/images/" + this.repoName + ".svg";
+    this.imagePath = `/images/${this.repoName}.svg`;
     octokit.repos
       .listCommits({ owner: "MegaMattMiller", repo: this.repoName })
       .then(result => {
         this.lastEditedDate =
-          "Updated " + timeAgo(result.data[0].commit.author.date);
+          `Updated ${timeAgo(result.data[0].commit.author.date)}`;
       });
   },
   data: function() {
