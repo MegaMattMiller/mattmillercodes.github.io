@@ -2,6 +2,7 @@
   <b-card
     :title="title"
     :img-src="imagePath"
+    :img-alt="title"
     img-top
     bg-variant="light"
     footer-bg-variant="light"
