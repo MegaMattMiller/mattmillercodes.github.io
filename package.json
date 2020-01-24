@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.25",
-    "@fortawesome/free-brands-svg-icons": "^5.11.2",
+    "@fortawesome/free-brands-svg-icons": "^5.12.0",
     "@fortawesome/vue-fontawesome": "^0.1.8",
     "@octokit/rest": "^16.38.1",
     "babel-runtime": "^6.26.0",
