@@ -8,16 +8,20 @@
     footer-bg-variant="light"
     footer-tag="footer"
   >
-    <b-card-text>{{body}}</b-card-text>
+    <b-card-text>{{ body }}</b-card-text>
     <b-container slot="footer">
       <b-row align-v="center">
         <b-col>
           <span class="float-left">
-            {{lastEditedDate}}
+            {{ lastEditedDate }}
           </span>
         </b-col>
         <b-col>
-          <b-button :href="url" variant="dark" class="float-right">
+          <b-button
+            :href="url"
+            variant="dark"
+            class="float-right"
+          >
             Check it out
           </b-button>
         </b-col>
@@ -33,6 +37,13 @@ var timeAgo = require("node-time-ago");
 export default {
   name: "GitHubCard",
   props: ["title", "body", "url"],
+  data: function() {
+    return {
+      lastEditedDate: "",
+      repoName: "",
+      imagePath: ""
+    };
+  },
   created: function() {
     const octokit = new Octokit({
       auth: undefined,
@@ -61,13 +72,6 @@ export default {
         this.lastEditedDate =
           `Updated ${timeAgo(result.data[0].commit.author.date)}`;
       });
-  },
-  data: function() {
-    return {
-      lastEditedDate: "",
-      repoName: "",
-      imagePath: ""
-    };
   }
 };
 </script>

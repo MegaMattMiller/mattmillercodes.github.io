@@ -1,6 +1,9 @@
 <template>
   <div class="statichome">
-    <b-jumbotron header="Hi! I'm Matt!" fluid>
+    <b-jumbotron
+      header="Hi! I'm Matt!"
+      fluid
+    >
       <p>I'm a programmer!</p>
     </b-jumbotron>
     <b-container>
@@ -8,11 +11,11 @@
         <div class="col">
           <b-card-group deck>
             <GitHubCard
-              v-bind:key="card.id"
               v-for="card in cards"
-              v-bind:title="card.title"
-              v-bind:body="card.body"
-              v-bind:url="card.url"
+              :key="card.id"
+              :title="card.title"
+              :body="card.body"
+              :url="card.url"
             />
           </b-card-group>
         </div>
