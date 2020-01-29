@@ -1,3 +1,4 @@
+/* eslint react/prop-types: 0 */
 <template>
   <b-card
     :title="title"
