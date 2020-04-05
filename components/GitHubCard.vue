@@ -1,6 +1,8 @@
 <template>
   <b-card bg-variant="light" footer-bg-variant="light" footer-tag="footer">
-    <b-card-img-lazy top :src="imagePath" :alt="title" class="card-img-top" />
+    <a :href="url">
+      <b-card-img-lazy top :src="imagePath" :alt="title" class="card-img-top" />
+    </a>
     <b-card-title>{{ title }}</b-card-title>
     <b-card-text>{{ body }}</b-card-text>
     <b-container slot="footer">
