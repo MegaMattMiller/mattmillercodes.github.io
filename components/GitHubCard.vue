@@ -1,13 +1,7 @@
 <template>
-  <b-card
-    :title="title"
-    :img-src="imagePath"
-    :img-alt="title"
-    img-top
-    bg-variant="light"
-    footer-bg-variant="light"
-    footer-tag="footer"
-  >
+  <b-card bg-variant="light" footer-bg-variant="light" footer-tag="footer">
+    <b-card-img-lazy top :src="imagePath" :alt="title" class="card-img-top" />
+    <b-card-title>{{ title }}</b-card-title>
     <b-card-text>{{ body }}</b-card-text>
     <b-container slot="footer">
       <b-row align-v="center">
@@ -61,6 +55,7 @@ export default {
   width: 100%;
   height: 15vw;
   object-fit: cover;
+  margin-bottom: 20px;
 }
 .card-footer {
   padding-left: 0;
