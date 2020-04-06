@@ -50,6 +50,18 @@ export default {
         }
       ]
     }
+  },
+  head() {
+    return {
+      title: 'Matt Miller - Programmer',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Matt Miller, Programmer'
+        }
+      ]
+    }
   }
 }
 </script>
