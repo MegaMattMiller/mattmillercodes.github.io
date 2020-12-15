@@ -46,7 +46,7 @@ export default {
   },
   computed: {
     imagePath() {
-      return `${this.repoName}.svg`
+      return `${this.repoName}.png`
     }
   }
 }
